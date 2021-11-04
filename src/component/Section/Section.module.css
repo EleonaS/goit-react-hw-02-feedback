@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(132, 204, 188);
+}
+div {
+  /*margin-left: auto;
+  margin-right: auto;*/
+  text-align: center;
+}
+
+.tn {
+  color: blueviolet;
+}

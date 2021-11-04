@@ -1,0 +1,20 @@
+.btn {
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #0d3803;
+  color: white;
+}
+
+h1 > button {
+  display: inline-flex;
+}
+
+button:not(:last-of-type) {
+  margin-right: 10px;
+}
