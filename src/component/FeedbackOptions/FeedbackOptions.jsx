@@ -17,28 +17,24 @@ function FeedbackOptions({
 }) {
   return (
     <div>
-      {Object.keys(options).map(key => (
-        <button
-          key={key}
-          type="button"
-          className={s.btn}
-          onClick={() => {
-            onLeaveFeedback(key);
-          }}
-        >
-          {`${key}`}
-        </button>
-      ))}
+      {Object.keys(options).map(
+        option => (
+          <button
+            key={option}
+            type="button"
+            className={s.btn}
+            onClick={() => {
+              onLeaveFeedback(option);
+            }}
+          >
+            {option}
+          </button>
+        ),
+      )}
     </div>
   );
 }
-
 FeedbackOptions.propTypes = {
-  /* buttons: PropTypes.shape({
-    good: PropTypes.number.isRequired,
-    neutral: PropTypes.number.isRequired,
-    bad: PropTypes.number.isRequired,
-  }).isRequired,*/
   options: PropTypes.object.isRequired,
   onLeaveFeedback:
     PropTypes.func.isRequired,
