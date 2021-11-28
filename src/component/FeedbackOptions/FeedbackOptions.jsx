@@ -34,6 +34,7 @@ function FeedbackOptions({
     </div>
   );
 }
+
 FeedbackOptions.propTypes = {
   options: PropTypes.object.isRequired,
   onLeaveFeedback:
